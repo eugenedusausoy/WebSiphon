@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="libs/ua-parser/dist/ua-parser.min.js"></script>
+    <title>Web Siphon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO WEB SIPHON</h1>
+        <p>What can a website know about you ? This page shows a few informations about yourself  accessible to websites</p>
+    </header>
+
+    <section>
+        <div class="info-block" id="browserInfo">
+            <h2>Browser and Device</h2>
+            <p>Browser: <span id="browser"></span></p>
+            <p>Operating System: <span id="os"></span></p>
+            <p>Screen Resolution: <span id="resolution"></span></p>
+            <p><b>Device:</b> <span id="device"></span></p>
+        </div>
+        
+        <div class="info-block" id="batteryStatus">
+            <h2>Battery Status</h2>
+            <p>Battery Level: <span id="battery-level">Loading...</span></p>
+            <p>Charging: <span id="battery-charging">Loading...</span></p>
+        </div>
+        
+        <div class="info-block" id="networkInfo">
+            <h2>Network</h2>
+            <p>IP Address: <span id="ip"></span></p>
+            <p>Location (approximate): <span id="location"></span></p>
+            <p><span id="IPAPIKEY"></span></p>
+        </div>
+        
+        <div class="info-block" id="connectionSpeed">
+            <h2>Connection Speed</h2>
+            <p id="speed">Testing...</p>
+            <p id="networkType">Network Type: </p>
+        </div>
+    </section>
+
+    <div id="mouse-coordinates"></div>
+    <div id="message"></div>
+    <div id="timer"></div>
+
+    <footer>
+        <p>All data is displayed locally without storage or tracking.</p>
+        <div id="oii">
+            <p>Or is it ?</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+     
+    <script src="scripts/deviceInfo.js"></script>
+    <script src="scripts/batteryStatus.js"></script>
+    <script src="scripts/networkInfo.js"></script>
+    <script src="scripts/speedTest.js"></script>
+    <script src="scripts/mouseTracker.js"></script>
+
+    
+
+
+    <script src="scripts/main.js"></script>
+    
+</body>
+</html>
